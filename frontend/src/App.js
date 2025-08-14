@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Layout from './components/Layout/Layout';
 import ProtectedRoute from './components/Auth/ProtectedRoute';
 import LoadingSpinner from './components/UI/LoadingSpinner';
+import Toast from './components/UI/Toast';
 
 // Pages
 import Login from './pages/Auth/Login';
@@ -63,6 +64,7 @@ function App() {
 
   return (
     <div className="App">
+      <Toast />
       <Routes>
         {/* Public routes */}
         <Route
